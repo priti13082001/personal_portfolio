@@ -43,7 +43,7 @@ section{
     align-items: center;
     justify-content: space-between;
 }
-section .title, section .title1,section .title2{
+section .title, section .title1,section .title2,section .title3{
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -53,7 +53,7 @@ section .title, section .title1,section .title2{
     font-family: 'Ubuntu', sans-serif;
 }
 
-section .title::before, section .title1::before,section .title2::before{
+section .title::before, section .title1::before,section .title2::before,section .title3::before{
     content: "";
     position: absolute;
     bottom: 0px;
@@ -65,7 +65,7 @@ section .title::before, section .title1::before,section .title2::before{
     transform: translateX(-50%);
 }
 
-section .title::after, section .title1::after,section .title2::after{
+section .title::after, section .title1::after,section .title2::after,section .title3::after{
     position: absolute;
     bottom: -10px;
     left: 50%;
@@ -163,7 +163,7 @@ section .title::after, section .title1::after,section .title2::after{
 .home{
     display: flex;
     /* background: url("https://th.bing.com/th/id/R.5ad73064be96a2d44d7bba192583f7a7?rik=VFnMPAZ%2b6HQrOg&riu=http%3a%2f%2fwww.digitaldistrict.ca%2fwp-content%2fuploads%2f2016%2f08%2fpolygondark.png&ehk=tN%2fLPEjL3IwCbmGX7HThtn6zluaGHhirAkxzyqjleco%3d&risl=&pid=ImgRaw&r=0") no-repeat center;      */
-     background: url("Divyaimg.png") no-repeat center;
+     background: url("images/Divyaimg.png") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -222,7 +222,7 @@ section .title::after, section .title1::after,section .title2::after{
 }
 .about .about-content .left img{
     height: 400px;
-    width: 400px;
+    width: 350px;
     object-fit: cover;
     border-radius: 6px;
 }
@@ -268,11 +268,11 @@ section .title::after, section .title1::after,section .title2::after{
     /* background:url(https://th.bing.com/th/id/OIP.y5Vp39poymYUx7Wh7jSEwwHaGW?pid=ImgDet&w=600&h=514&rs=1)   */
 }
 .services .title::before,
-.teams .title::before,.teams .title1::before,.cirt .title2::before{
+.teams .title::before,.teams .title1::before,.cirt .title2::before,.teams .title3::before{
     background: #fff;
 }
 .services .title::after,
-.teams .title::after, .teams .title1::after,.cirt .title2::after{
+.teams .title::after, .teams .title1::after,.cirt .title2::after, .teams .title3::after{
     background: #111; 
     content: "what i did";
 }
@@ -287,8 +287,8 @@ section .title::after, section .title1::after,section .title2::after{
     transition: all 0.3s ease;
 }
 .services .serv-content .card1 {
-    width: calc(33% - 20px);
-    background: #222;
+    width: calc(33% - 20px); 
+    /* background: #222; */
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
@@ -409,6 +409,9 @@ section .title::after, section .title1::after,section .title2::after{
 .skills-content .right .vs::before{
     width: 60%;
 }
+.skills-content .right .r::before {
+    width: 50%;
+}
 
 /* teams section styling */
 .teams .title::after{
@@ -420,6 +423,9 @@ section .title::after, section .title1::after,section .title2::after{
 .cirt .title2::after{
     content:"What I did"
 }
+ .teams .title3::after {
+     content: "Kemaye Clone";
+ }
 .teams .carousel .card{
     background: #222;
     border-radius: 6px;
@@ -431,7 +437,7 @@ section .title::after, section .title1::after,section .title2::after{
 .cirt .carousel .card1 {
     background: #222; 
     border-radius: 6px;
-    padding: 25px 35px;
+    padding: 10px 10px;
     text-align: center;
     overflow: hidden;
     transition: all 0.3s ease;
@@ -477,8 +483,8 @@ section .title::after, section .title1::after,section .title2::after{
     transition: all 0.3s ease;
 }
 .cirt .carousel .card1 img {
-    height: 180px;
-    width: 150px;
+    height: 200px;
+    width: 250px;
     object-fit:cover;
     object-fit: cover;
     border: 5px solid rgb(18, 17, 17);
