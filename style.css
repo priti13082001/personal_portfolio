@@ -10,6 +10,29 @@ html{
     scroll-behavior: smooth;
 }
 /* custom scroll bar */
+
+
+
+
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}
+
+
+
+
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -274,7 +297,7 @@ section .title::after, section .title1::after,section .title2::after,section .ti
 .services .title::after,
 .teams .title::after, .teams .title1::after,.cirt .title2::after, .teams .title3::after{
     background: #111; 
-    /* content: "what i did"; */
+    content: "what i did";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -443,10 +466,12 @@ section .title::after, section .title1::after,section .title2::after,section .ti
     /* transition: all 0.3s ease; */
 }
 .teams .carousel .card:hover{
-    background:red;
+    background: rgb(243, 147, 147);
+    color:black;
 }
 .cirt .carousel .card1:hover {
-    background:red;
+    background:rgb(243, 147, 147);
+    color:black;
 }
 .teams .carousel .card .box{
     display: flex;
